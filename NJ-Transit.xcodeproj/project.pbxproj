@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1133D22BF1B5C13FA74E33E2 /* Pods_NJ_Transit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071876019AFD799AFBBAC9A8 /* Pods_NJ_Transit.framework */; };
+		175A9E26930181363A79C659 /* Pods_NJ_TransitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE632EDD668136FB3B631894 /* Pods_NJ_TransitTests.framework */; };
+		9E606D9820A0065E00A20B5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E606D9720A0065E00A20B5A /* Main.storyboard */; };
+		9E606D9B20A1EAAA00A20B5A /* API-service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E606D9A20A1EAAA00A20B5A /* API-service.swift */; };
+		9E606D9D20A1F90200A20B5A /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E606D9C20A1F90200A20B5A /* Station.swift */; };
+		9E606D9F20A1F91600A20B5A /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E606D9E20A1F91600A20B5A /* Train.swift */; };
 		9E63704A209B67390059857D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E637049209B67390059857D /* AppDelegate.swift */; };
-		9E63704C209B67390059857D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E63704B209B67390059857D /* ViewController.swift */; };
-		9E63704F209B67390059857D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E63704D209B67390059857D /* Main.storyboard */; };
+		9E63704C209B67390059857D /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E63704B209B67390059857D /* HomeController.swift */; };
 		9E637052209B67390059857D /* NJ_Transit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E637050209B67390059857D /* NJ_Transit.xcdatamodeld */; };
 		9E637054209B673B0059857D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E637053209B673B0059857D /* Assets.xcassets */; };
 		9E637057209B673B0059857D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E637055209B673B0059857D /* LaunchScreen.storyboard */; };
 		9E637062209B673B0059857D /* NJ_TransitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E637061209B673B0059857D /* NJ_TransitTests.swift */; };
 		9E63706D209B673B0059857D /* NJ_TransitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E63706C209B673B0059857D /* NJ_TransitUITests.swift */; };
+		DFE9C1A4D16C78BEE2ECAB3C /* Pods_NJ_TransitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB56C89A13B57FBB9565C1D /* Pods_NJ_TransitUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +41,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		071876019AFD799AFBBAC9A8 /* Pods_NJ_Transit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NJ_Transit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AFE89B04384BBBD6731B848 /* Pods-NJ-Transit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NJ-Transit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NJ-Transit/Pods-NJ-Transit.debug.xcconfig"; sourceTree = "<group>"; };
+		1E259504C87FBDB46719CAEF /* Pods-NJ-TransitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NJ-TransitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NJ-TransitTests/Pods-NJ-TransitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		255C95FC24E0A9B63AC6AD4C /* Pods-NJ-Transit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NJ-Transit.release.xcconfig"; path = "Pods/Target Support Files/Pods-NJ-Transit/Pods-NJ-Transit.release.xcconfig"; sourceTree = "<group>"; };
+		2FB56C89A13B57FBB9565C1D /* Pods_NJ_TransitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NJ_TransitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6474AF5DAE80CB2F5BB7623D /* Pods-NJ-TransitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NJ-TransitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NJ-TransitUITests/Pods-NJ-TransitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7690D81EBE2A570448BA8B30 /* Pods-NJ-TransitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NJ-TransitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NJ-TransitTests/Pods-NJ-TransitTests.release.xcconfig"; sourceTree = "<group>"; };
+		9E606D9720A0065E00A20B5A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9E606D9A20A1EAAA00A20B5A /* API-service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API-service.swift"; sourceTree = "<group>"; };
+		9E606D9C20A1F90200A20B5A /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		9E606D9E20A1F91600A20B5A /* Train.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
 		9E637046209B67390059857D /* NJ-Transit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NJ-Transit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E637049209B67390059857D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9E63704B209B67390059857D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9E63704E209B67390059857D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E63704B209B67390059857D /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		9E637051209B67390059857D /* NJ_Transit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NJ_Transit.xcdatamodel; sourceTree = "<group>"; };
 		9E637053209B673B0059857D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E637056209B673B0059857D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +65,8 @@
 		9E637068209B673B0059857D /* NJ-TransitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NJ-TransitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E63706C209B673B0059857D /* NJ_TransitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NJ_TransitUITests.swift; sourceTree = "<group>"; };
 		9E63706E209B673B0059857D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B405C27925B31199DD1C6253 /* Pods-NJ-TransitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NJ-TransitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NJ-TransitUITests/Pods-NJ-TransitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE632EDD668136FB3B631894 /* Pods_NJ_TransitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NJ_TransitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1133D22BF1B5C13FA74E33E2 /* Pods_NJ_Transit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				175A9E26930181363A79C659 /* Pods_NJ_TransitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +90,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFE9C1A4D16C78BEE2ECAB3C /* Pods_NJ_TransitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		836F0444538AD335A209955B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AFE89B04384BBBD6731B848 /* Pods-NJ-Transit.debug.xcconfig */,
+				255C95FC24E0A9B63AC6AD4C /* Pods-NJ-Transit.release.xcconfig */,
+				1E259504C87FBDB46719CAEF /* Pods-NJ-TransitTests.debug.xcconfig */,
+				7690D81EBE2A570448BA8B30 /* Pods-NJ-TransitTests.release.xcconfig */,
+				B405C27925B31199DD1C6253 /* Pods-NJ-TransitUITests.debug.xcconfig */,
+				6474AF5DAE80CB2F5BB7623D /* Pods-NJ-TransitUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E606D9520A000E800A20B5A /* models */ = {
+			isa = PBXGroup;
+			children = (
+				9E606D9C20A1F90200A20B5A /* Station.swift */,
+				9E606D9E20A1F91600A20B5A /* Train.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		9E606D9620A000F200A20B5A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E63704B209B67390059857D /* HomeController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9E606D9920A1EA3D00A20B5A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9E606D9A20A1EAAA00A20B5A /* API-service.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		9E63703D209B67390059857D = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +142,8 @@
 				9E637060209B673B0059857D /* NJ-TransitTests */,
 				9E63706B209B673B0059857D /* NJ-TransitUITests */,
 				9E637047209B67390059857D /* Products */,
+				836F0444538AD335A209955B /* Pods */,
+				BDC905FFE615490D6F99F236 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +160,11 @@
 		9E637048209B67390059857D /* NJ-Transit */ = {
 			isa = PBXGroup;
 			children = (
+				9E606D9920A1EA3D00A20B5A /* API */,
+				9E606D9720A0065E00A20B5A /* Main.storyboard */,
+				9E606D9620A000F200A20B5A /* View Controllers */,
+				9E606D9520A000E800A20B5A /* models */,
 				9E637049209B67390059857D /* AppDelegate.swift */,
-				9E63704B209B67390059857D /* ViewController.swift */,
-				9E63704D209B67390059857D /* Main.storyboard */,
 				9E637053209B673B0059857D /* Assets.xcassets */,
 				9E637055209B673B0059857D /* LaunchScreen.storyboard */,
 				9E637058209B673B0059857D /* Info.plist */,
@@ -128,6 +191,16 @@
 			path = "NJ-TransitUITests";
 			sourceTree = "<group>";
 		};
+		BDC905FFE615490D6F99F236 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				071876019AFD799AFBBAC9A8 /* Pods_NJ_Transit.framework */,
+				EE632EDD668136FB3B631894 /* Pods_NJ_TransitTests.framework */,
+				2FB56C89A13B57FBB9565C1D /* Pods_NJ_TransitUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E637071209B673B0059857D /* Build configuration list for PBXNativeTarget "NJ-Transit" */;
 			buildPhases = (
+				796035A99BF003FE1BE3119D /* [CP] Check Pods Manifest.lock */,
 				9E637042209B67390059857D /* Sources */,
 				9E637043209B67390059857D /* Frameworks */,
 				9E637044209B67390059857D /* Resources */,
+				F40FC137A2B23057933099B1 /* [CP] Embed Pods Frameworks */,
+				91C82D1FAB111319D9857B38 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E637074209B673B0059857D /* Build configuration list for PBXNativeTarget "NJ-TransitTests" */;
 			buildPhases = (
+				5804982DA11DA5C8D3D1ED19 /* [CP] Check Pods Manifest.lock */,
 				9E637059209B673B0059857D /* Sources */,
 				9E63705A209B673B0059857D /* Frameworks */,
 				9E63705B209B673B0059857D /* Resources */,
+				6E586C01B07032CA24B36F33 /* [CP] Embed Pods Frameworks */,
+				9150011AB858F844B9DC6520 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +249,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E637077209B673B0059857D /* Build configuration list for PBXNativeTarget "NJ-TransitUITests" */;
 			buildPhases = (
+				F9D36EC27D877C68BF4E96B5 /* [CP] Check Pods Manifest.lock */,
 				9E637064209B673B0059857D /* Sources */,
 				9E637065209B673B0059857D /* Frameworks */,
 				9E637066209B673B0059857D /* Resources */,
+				23059BEF01BB0BDA7A173BC4 /* [CP] Embed Pods Frameworks */,
+				4D0F1B71263D3B4F33848D52 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,9 +314,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E606D9820A0065E00A20B5A /* Main.storyboard in Resources */,
 				9E637057209B673B0059857D /* LaunchScreen.storyboard in Resources */,
 				9E637054209B673B0059857D /* Assets.xcassets in Resources */,
-				9E63704F209B67390059857D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +336,163 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23059BEF01BB0BDA7A173BC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NJ-TransitUITests/Pods-NJ-TransitUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D0F1B71263D3B4F33848D52 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NJ-TransitUITests/Pods-NJ-TransitUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5804982DA11DA5C8D3D1ED19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NJ-TransitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E586C01B07032CA24B36F33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NJ-TransitTests/Pods-NJ-TransitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		796035A99BF003FE1BE3119D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NJ-Transit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9150011AB858F844B9DC6520 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NJ-TransitTests/Pods-NJ-TransitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91C82D1FAB111319D9857B38 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NJ-Transit/Pods-NJ-Transit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F40FC137A2B23057933099B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NJ-Transit/Pods-NJ-Transit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9D36EC27D877C68BF4E96B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NJ-TransitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9E637042209B67390059857D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E63704C209B67390059857D /* ViewController.swift in Sources */,
+				9E606D9B20A1EAAA00A20B5A /* API-service.swift in Sources */,
+				9E606D9D20A1F90200A20B5A /* Station.swift in Sources */,
+				9E63704C209B67390059857D /* HomeController.swift in Sources */,
 				9E637052209B67390059857D /* NJ_Transit.xcdatamodeld in Sources */,
+				9E606D9F20A1F91600A20B5A /* Train.swift in Sources */,
 				9E63704A209B67390059857D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +529,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9E63704D209B67390059857D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9E63704E209B67390059857D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9E637055209B673B0059857D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,6 +656,7 @@
 		};
 		9E637072209B673B0059857D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AFE89B04384BBBD6731B848 /* Pods-NJ-Transit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +675,7 @@
 		};
 		9E637073209B673B0059857D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 255C95FC24E0A9B63AC6AD4C /* Pods-NJ-Transit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +694,7 @@
 		};
 		9E637075209B673B0059857D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E259504C87FBDB46719CAEF /* Pods-NJ-TransitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -489,6 +716,7 @@
 		};
 		9E637076209B673B0059857D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7690D81EBE2A570448BA8B30 /* Pods-NJ-TransitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +738,7 @@
 		};
 		9E637078209B673B0059857D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B405C27925B31199DD1C6253 /* Pods-NJ-TransitUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +759,7 @@
 		};
 		9E637079209B673B0059857D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6474AF5DAE80CB2F5BB7623D /* Pods-NJ-TransitUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
