@@ -27,14 +27,24 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
     var startStation: Station?
     var endStation: Station?
     var stations = [Station]()
-    var startStationTextView: UITextField = UITextField()
-    var endStationTextView: UITextField = UITextField()
+    
+    var container: UIView = UIView()
+    var startionStationTextField: UITextField = UITextField()
+    var endStationTextField: UITextField = UITextField()
     var list: UITableView = UITableView()
     var picker: UIPickerView = UIPickerView()
+    var searchBtn: UIButton = UIButton.init(type: UIButtonType.system)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.blue
+        APIService.fetchAllStations()
+        .subscribe(
+            onNext: { stations in
+                print(stations.count)
+                self.stations = stations
+        }, onError: { err in
+            print("found err")
+        })
         setupStationPickerView()
         setupTableView()
     }
@@ -44,7 +54,7 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let station = Station(id: 1, name: "hello", createdAt: Date(), updatedAt: Date())
+        let station = Station.init(id: 1, name: "hello", createdAt: Date(), updatedAt: Date())
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
         //        var cell = StationCell(text: station.name)
         cell.textLabel?.text = station.name
@@ -56,42 +66,62 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return APIService.stations.count
+        return self.stations.count
     }
     
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return self.stations[row].name
+    }
     private func setupStationPickerView() -> Void {
         picker.dataSource = self
         picker.delegate = self
-        let container = UIView()
         container.translatesAutoresizingMaskIntoConstraints = false
         container.backgroundColor = UIColor.red
         view.addSubview(container)
         container.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        container.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
+        container.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.4).isActive = true
         container.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        container.addSubview(startStationTextView)
-        container.addSubview(endStationTextView)
-        startStationTextView.translatesAutoresizingMaskIntoConstraints = false
-        startStationTextView.inputView = picker
-        startStationTextView.backgroundColor = UIColor.orange
-        endStationTextView.translatesAutoresizingMaskIntoConstraints = false
-        endStationTextView.inputView = picker
-        endStationTextView.backgroundColor = UIColor.purple
-        startStationTextView.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
-        startStationTextView.widthAnchor.constraint(equalTo: container.widthAnchor, multiplier: 0.75).isActive = true
-        startStationTextView.centerYAnchor.constraint(equalTo: container.centerYAnchor, constant: -20).isActive = true
-        startStationTextView.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        setupTextFields()
+        setupSearchBtn()
         
-        endStationTextView.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
-        endStationTextView.widthAnchor.constraint(equalTo: container.widthAnchor, multiplier: 0.75).isActive = true
-        endStationTextView.centerYAnchor.constraint(equalTo: container.centerYAnchor, constant: 20).isActive = true
-        endStationTextView.heightAnchor.constraint(equalToConstant: 40).isActive = true
     }
     
-//    private func setupStationPickers() -> UIPickerView {
-//        let picker = UIPickerView()
-//        picker.widthAnchor.constraint(equalTo: )
-//    }
+    private func setupTextFields() -> Void {
+        container.addSubview(startionStationTextField)
+        container.addSubview(endStationTextField)
+        startionStationTextField.translatesAutoresizingMaskIntoConstraints = false
+        startionStationTextField.inputView = picker
+        startionStationTextField.backgroundColor = UIColor.orange
+        startionStationTextField.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
+        startionStationTextField.widthAnchor.constraint(equalTo: container.widthAnchor, multiplier: 0.75).isActive = true
+        startionStationTextField.centerYAnchor.constraint(equalTo: container.centerYAnchor, constant: -40).isActive = true
+        startionStationTextField.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        
+        endStationTextField.translatesAutoresizingMaskIntoConstraints = false
+        endStationTextField.inputView = picker
+        endStationTextField.backgroundColor = UIColor.purple
+        endStationTextField.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
+        endStationTextField.widthAnchor.constraint(equalTo: container.widthAnchor, multiplier: 0.75).isActive = true
+        endStationTextField.centerYAnchor.constraint(equalTo: container.centerYAnchor, constant: 40).isActive = true
+        endStationTextField.heightAnchor.constraint(equalToConstant: 40).isActive = true
+    }
+    
+    private func setupSearchBtn() -> Void {
+        container.addSubview(searchBtn)
+//        searchBtn.backgroundColor = UIColor.cyan
+//        searchBtn.showsTouchWhenHighlighted = true
+        searchBtn.setTitle("search", for: UIControlState.normal)
+        searchBtn.addTarget(self, action: #selector(onSearchBtnTap(_ :)), for: .touchUpInside)
+        searchBtn.translatesAutoresizingMaskIntoConstraints = false
+        searchBtn.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        searchBtn.widthAnchor.constraint(equalTo: container.widthAnchor, multiplier: 0.75).isActive = true
+        searchBtn.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
+        searchBtn.centerYAnchor.constraint(equalTo: container.centerYAnchor, constant: 120).isActive = true
+    }
+    
+    @objc func onSearchBtnTap(_ : UIButton) {
+        print("button tapped")
+    }
     
     private func setupTableView() -> Void {
         list.dataSource = self
@@ -100,7 +130,7 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
         list.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(list)
         list.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        list.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
+        list.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.6).isActive = true
         list.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
 //        list.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }

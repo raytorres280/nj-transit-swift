@@ -20,6 +20,9 @@
 		9E637057209B673B0059857D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E637055209B673B0059857D /* LaunchScreen.storyboard */; };
 		9E637062209B673B0059857D /* NJ_TransitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E637061209B673B0059857D /* NJ_TransitTests.swift */; };
 		9E63706D209B673B0059857D /* NJ_TransitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E63706C209B673B0059857D /* NJ_TransitUITests.swift */; };
+		9EFF64A720A464E5000589FD /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF64A620A464E5000589FD /* CustomTabBarController.swift */; };
+		9EFF64A920A46DFF000589FD /* TicketsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF64A820A46DFF000589FD /* TicketsController.swift */; };
+		9EFF64AB20A46E28000589FD /* DepartureVisionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF64AA20A46E28000589FD /* DepartureVisionController.swift */; };
 		DFE9C1A4D16C78BEE2ECAB3C /* Pods_NJ_TransitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB56C89A13B57FBB9565C1D /* Pods_NJ_TransitUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +68,9 @@
 		9E637068209B673B0059857D /* NJ-TransitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NJ-TransitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E63706C209B673B0059857D /* NJ_TransitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NJ_TransitUITests.swift; sourceTree = "<group>"; };
 		9E63706E209B673B0059857D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EFF64A620A464E5000589FD /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		9EFF64A820A46DFF000589FD /* TicketsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsController.swift; sourceTree = "<group>"; };
+		9EFF64AA20A46E28000589FD /* DepartureVisionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureVisionController.swift; sourceTree = "<group>"; };
 		B405C27925B31199DD1C6253 /* Pods-NJ-TransitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NJ-TransitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NJ-TransitUITests/Pods-NJ-TransitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EE632EDD668136FB3B631894 /* Pods_NJ_TransitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NJ_TransitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -122,7 +128,10 @@
 		9E606D9620A000F200A20B5A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9EFF64A620A464E5000589FD /* CustomTabBarController.swift */,
 				9E63704B209B67390059857D /* HomeController.swift */,
+				9EFF64A820A46DFF000589FD /* TicketsController.swift */,
+				9EFF64AA20A46E28000589FD /* DepartureVisionController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -454,9 +463,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NJ-Transit/Pods-NJ-Transit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Microfutures/Microfutures.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Microfutures.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -489,10 +501,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E606D9B20A1EAAA00A20B5A /* API-service.swift in Sources */,
+				9EFF64A720A464E5000589FD /* CustomTabBarController.swift in Sources */,
 				9E606D9D20A1F90200A20B5A /* Station.swift in Sources */,
 				9E63704C209B67390059857D /* HomeController.swift in Sources */,
 				9E637052209B67390059857D /* NJ_Transit.xcdatamodeld in Sources */,
+				9EFF64A920A46DFF000589FD /* TicketsController.swift in Sources */,
 				9E606D9F20A1F91600A20B5A /* Train.swift in Sources */,
+				9EFF64AB20A46E28000589FD /* DepartureVisionController.swift in Sources */,
 				9E63704A209B67390059857D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -662,10 +677,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PL9AP8S6S7;
 				INFOPLIST_FILE = "NJ-Transit/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ccc.NJ-Transit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -681,10 +693,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PL9AP8S6S7;
 				INFOPLIST_FILE = "NJ-Transit/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ccc.NJ-Transit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -701,11 +710,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PL9AP8S6S7;
 				INFOPLIST_FILE = "NJ-TransitTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ccc.NJ-TransitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -723,11 +728,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PL9AP8S6S7;
 				INFOPLIST_FILE = "NJ-TransitTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ccc.NJ-TransitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -744,11 +745,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PL9AP8S6S7;
 				INFOPLIST_FILE = "NJ-TransitUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ccc.NJ-TransitUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -765,11 +762,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PL9AP8S6S7;
 				INFOPLIST_FILE = "NJ-TransitUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ccc.NJ-TransitUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

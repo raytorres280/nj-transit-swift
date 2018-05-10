@@ -7,23 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		084D6DC0C7F243C1035E77DA017EBF34 /* Microfutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1868D64D711855753701B020D7D63226 /* Microfutures.swift */; };
+		1003170EF6117E90F27E5A3D846CE3A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		2165897CEC3C7F81CA8F565E37D61453 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		36250FCE5A93D85DAAECA8763061183E /* Pods-NJ-TransitTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52452407A924DFF9BE8E023313468C30 /* Pods-NJ-TransitTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39F9551AD9E6B08C544DAA176CE17FB6 /* Microfutures-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 500C44581A2FB3929E117BB3209ACED8 /* Microfutures-dummy.m */; };
+		714A90F1FF85C34C5567A8AF6DD8E8AA /* Pods-NJ-Transit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C229E459DF64B0A92EF1D034F7180DF7 /* Pods-NJ-Transit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81DF409D26F9DF967CD5CD9BFD4D2428 /* Pods-NJ-TransitUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E26B99E476A7CAD48A77945E10FD8AB7 /* Pods-NJ-TransitUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0B0C068B29DE534C1C358043439E842 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		B1CDDD853E4648F470F73DFFAC44A839 /* Pods-NJ-TransitTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6360F854373EE2B10AD3CF0167834B /* Pods-NJ-TransitTests-dummy.m */; };
-		C263A360A0FD0F8BF6D68B7A491569D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		ED627D81079C953651BF2842B87A4CFB /* Pods-NJ-Transit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C229E459DF64B0A92EF1D034F7180DF7 /* Pods-NJ-Transit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D13A510DE2559D52319FFFD059952D42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D65F977B9A3E68CFCCC27894B5D86AB7 /* Pods-NJ-Transit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A259D1150A123962AA7F3B6CD2636D /* Pods-NJ-Transit-dummy.m */; };
 		F2643E97AACF247876AC246115259DD9 /* Pods-NJ-TransitUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C749EF1297041A05FC905E08506872 /* Pods-NJ-TransitUITests-dummy.m */; };
-		F7B78796AD69FE42D29B41BC02A4807A /* Pods-NJ-Transit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A259D1150A123962AA7F3B6CD2636D /* Pods-NJ-Transit-dummy.m */; };
+		F8DAB8BB2DDCC6EB0364E46B00F73E47 /* Microfutures-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECEB6A6EFDC94DA04347D48EFE814EF2 /* Microfutures-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92697C5506A91F49EE9313EA9D6B1588 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 899382291472AFBE15F4BCC117F9CBD5;
+			remoteInfo = Microfutures;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		005F5A5A2666D915E4837BE06923FC39 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03090911EB93A87D934C7BE8058F17F9 /* Pods-NJ-Transit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NJ-Transit-frameworks.sh"; sourceTree = "<group>"; };
+		054B3FF9802E2035E3DC808E6E45CC4E /* Microfutures-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Microfutures-prefix.pch"; sourceTree = "<group>"; };
+		05775501799F7C9DFA7136C550A15443 /* Microfutures.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Microfutures.xcconfig; sourceTree = "<group>"; };
 		0698F4F4CD24EB8A41F18543DC056CFF /* Pods-NJ-Transit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NJ-Transit.modulemap"; sourceTree = "<group>"; };
 		12C749EF1297041A05FC905E08506872 /* Pods-NJ-TransitUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NJ-TransitUITests-dummy.m"; sourceTree = "<group>"; };
 		13FA20E88B4A800682231ABA35E0666A /* Pods-NJ-TransitUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NJ-TransitUITests-resources.sh"; sourceTree = "<group>"; };
+		1868D64D711855753701B020D7D63226 /* Microfutures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Microfutures.swift; path = Microfutures/Classes/Microfutures.swift; sourceTree = "<group>"; };
 		1B2B9E4940EB45DFB62C64DFCEEE1767 /* Pods-NJ-TransitTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NJ-TransitTests-resources.sh"; sourceTree = "<group>"; };
 		25CAB47945F899423C6177DBF9CF20BA /* Pods-NJ-Transit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NJ-Transit.release.xcconfig"; sourceTree = "<group>"; };
 		26DA2157F93716A8A9D7625C24B92ED5 /* Pods-NJ-TransitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NJ-TransitTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -31,8 +48,10 @@
 		35D12A416F9AF7E303642A63F68275A4 /* Pods-NJ-TransitUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NJ-TransitUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3C5D00D9740E978F03565F17479F8F8D /* Pods-NJ-TransitTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NJ-TransitTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		467E91B0CB14EF2C064B56EDDBBEDCD3 /* Pods-NJ-TransitUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NJ-TransitUITests.modulemap"; sourceTree = "<group>"; };
-		4F9819F3D6813404B50D62969A0FBDEE /* Pods_NJ_TransitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NJ_TransitUITests.framework; path = "Pods-NJ-TransitUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DEB42AACFB4E6A87F242458ADA776BF /* Microfutures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Microfutures.framework; path = Microfutures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		500C44581A2FB3929E117BB3209ACED8 /* Microfutures-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Microfutures-dummy.m"; sourceTree = "<group>"; };
 		52452407A924DFF9BE8E023313468C30 /* Pods-NJ-TransitTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NJ-TransitTests-umbrella.h"; sourceTree = "<group>"; };
+		55915D9BF2F5CA86E6289ADCE6EA110D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58B9A159309A21BCFCF96ADFC0AD941C /* Pods-NJ-TransitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NJ-TransitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5CB0052D57D7D4BD5E8C1014ED8A5CF6 /* Pods-NJ-TransitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NJ-TransitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D6360F854373EE2B10AD3CF0167834B /* Pods-NJ-TransitTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NJ-TransitTests-dummy.m"; sourceTree = "<group>"; };
@@ -40,8 +59,9 @@
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		705B75854875FDF554DF27E8A0B9F679 /* Pods-NJ-TransitTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NJ-TransitTests-frameworks.sh"; sourceTree = "<group>"; };
 		71CF5E59C9174AB62BCB5ABA57411627 /* Pods-NJ-TransitUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NJ-TransitUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7F85BB6142C1D7AFA2F57A8EAA1F8072 /* Pods_NJ_Transit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NJ_Transit.framework; path = "Pods-NJ-Transit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7542A933921F31A61AF57A02E1454B6D /* Pods_NJ_Transit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NJ_Transit.framework; path = "Pods-NJ-Transit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80233C8429F93B3F6065A9C8C26EEAF4 /* Pods-NJ-Transit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NJ-Transit-acknowledgements.plist"; sourceTree = "<group>"; };
+		8E06C6AFF54449089F2D4A5797628E1E /* Pods_NJ_TransitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NJ_TransitUITests.framework; path = "Pods-NJ-TransitUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		922B0E45317F5A8F26D706587D8E6E4E /* Pods-NJ-TransitTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NJ-TransitTests.modulemap"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9A255C845795B3A314AD81836E730987 /* Pods-NJ-TransitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NJ-TransitUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -50,10 +70,12 @@
 		C144E10CE7822575BBAC535AD5C5B506 /* Pods-NJ-Transit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NJ-Transit.debug.xcconfig"; sourceTree = "<group>"; };
 		C229E459DF64B0A92EF1D034F7180DF7 /* Pods-NJ-Transit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NJ-Transit-umbrella.h"; sourceTree = "<group>"; };
 		CEF43DF36B6149D7B2AF672F98CDEE87 /* Pods-NJ-TransitUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NJ-TransitUITests-frameworks.sh"; sourceTree = "<group>"; };
+		D84635F40C9D661AE42AD4C653D90C72 /* Pods_NJ_TransitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NJ_TransitTests.framework; path = "Pods-NJ-TransitTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26B99E476A7CAD48A77945E10FD8AB7 /* Pods-NJ-TransitUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NJ-TransitUITests-umbrella.h"; sourceTree = "<group>"; };
 		E4A259D1150A123962AA7F3B6CD2636D /* Pods-NJ-Transit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NJ-Transit-dummy.m"; sourceTree = "<group>"; };
 		E77EF23C5223622AEBD3E8FFFF4F2539 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F54244E3FE2188FCB6B211B8132CF086 /* Pods_NJ_TransitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NJ_TransitTests.framework; path = "Pods-NJ-TransitTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBC1F95A1CC6315A9775829CAE91C58A /* Microfutures.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Microfutures.modulemap; sourceTree = "<group>"; };
+		ECEB6A6EFDC94DA04347D48EFE814EF2 /* Microfutures-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Microfutures-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +87,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		397650F652994FB027D56AFEE3293641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D13A510DE2559D52319FFFD059952D42 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5FFB647CDF667A663B2B32B2112BEFB6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,17 +103,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BCEA68B89C2F4F002C048DB169AAFAEA /* Frameworks */ = {
+		64A331B62AAF16E95E1DF00B324795C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C263A360A0FD0F8BF6D68B7A491569D7 /* Foundation.framework in Frameworks */,
+				1003170EF6117E90F27E5A3D846CE3A4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1494A06BC4740B3241DB74CF7C54B0F0 /* Microfutures */ = {
+			isa = PBXGroup;
+			children = (
+				1868D64D711855753701B020D7D63226 /* Microfutures.swift */,
+				80FBAF14761FEBD6816FE90AF442E5E3 /* Support Files */,
+			);
+			name = Microfutures;
+			path = Microfutures;
+			sourceTree = "<group>";
+		};
 		1632C677B5887E511B5224CC2F23C130 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,14 +170,48 @@
 			path = "Target Support Files/Pods-NJ-TransitTests";
 			sourceTree = "<group>";
 		};
+		6DCE81CC8EED2EFF04FD0B13DA35C602 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1494A06BC4740B3241DB74CF7C54B0F0 /* Microfutures */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				F3D6779BD2CC7BFDE99C00C6549C1AAE /* Products */,
+				6DCE81CC8EED2EFF04FD0B13DA35C602 /* Pods */,
+				A255E4AD73D4C2F986064140F50F0481 /* Products */,
 				1632C677B5887E511B5224CC2F23C130 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		80FBAF14761FEBD6816FE90AF442E5E3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				55915D9BF2F5CA86E6289ADCE6EA110D /* Info.plist */,
+				EBC1F95A1CC6315A9775829CAE91C58A /* Microfutures.modulemap */,
+				05775501799F7C9DFA7136C550A15443 /* Microfutures.xcconfig */,
+				500C44581A2FB3929E117BB3209ACED8 /* Microfutures-dummy.m */,
+				054B3FF9802E2035E3DC808E6E45CC4E /* Microfutures-prefix.pch */,
+				ECEB6A6EFDC94DA04347D48EFE814EF2 /* Microfutures-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Microfutures";
+			sourceTree = "<group>";
+		};
+		A255E4AD73D4C2F986064140F50F0481 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DEB42AACFB4E6A87F242458ADA776BF /* Microfutures.framework */,
+				7542A933921F31A61AF57A02E1454B6D /* Pods_NJ_Transit.framework */,
+				D84635F40C9D661AE42AD4C653D90C72 /* Pods_NJ_TransitTests.framework */,
+				8E06C6AFF54449089F2D4A5797628E1E /* Pods_NJ_TransitUITests.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -174,16 +248,6 @@
 			path = "Target Support Files/Pods-NJ-TransitUITests";
 			sourceTree = "<group>";
 		};
-		F3D6779BD2CC7BFDE99C00C6549C1AAE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7F85BB6142C1D7AFA2F57A8EAA1F8072 /* Pods_NJ_Transit.framework */,
-				F54244E3FE2188FCB6B211B8132CF086 /* Pods_NJ_TransitTests.framework */,
-				4F9819F3D6813404B50D62969A0FBDEE /* Pods_NJ_TransitUITests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -195,6 +259,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A30F1DD3382741A27DF357745E7904B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				714A90F1FF85C34C5567A8AF6DD8E8AA /* Pods-NJ-Transit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5E36B744B1E7919C701B63EDED2F1CF3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -203,11 +275,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D226F4B36152CE0EAB95035ADEBE3C39 /* Headers */ = {
+		D12A7EE15D471D52C5D20F3EE2E8EC12 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED627D81079C953651BF2842B87A4CFB /* Pods-NJ-Transit-umbrella.h in Headers */,
+				F8DAB8BB2DDCC6EB0364E46B00F73E47 /* Microfutures-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,24 +300,42 @@
 			);
 			name = "Pods-NJ-TransitUITests";
 			productName = "Pods-NJ-TransitUITests";
-			productReference = 4F9819F3D6813404B50D62969A0FBDEE /* Pods_NJ_TransitUITests.framework */;
+			productReference = 8E06C6AFF54449089F2D4A5797628E1E /* Pods_NJ_TransitUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BB397DD40C633243DE856D1998CC13EF /* Pods-NJ-Transit */ = {
+		899382291472AFBE15F4BCC117F9CBD5 /* Microfutures */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 03143D8ACBFBAE380FBFFDA0C236C509 /* Build configuration list for PBXNativeTarget "Pods-NJ-Transit" */;
+			buildConfigurationList = A29175725934F0EEE35945E76251090D /* Build configuration list for PBXNativeTarget "Microfutures" */;
 			buildPhases = (
-				91B3D960CEAE63D49DA8C285FC917A27 /* Sources */,
-				BCEA68B89C2F4F002C048DB169AAFAEA /* Frameworks */,
-				D226F4B36152CE0EAB95035ADEBE3C39 /* Headers */,
+				478396A8330FB7EBA606C1FBFB5C25F9 /* Sources */,
+				397650F652994FB027D56AFEE3293641 /* Frameworks */,
+				D12A7EE15D471D52C5D20F3EE2E8EC12 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = Microfutures;
+			productName = Microfutures;
+			productReference = 4DEB42AACFB4E6A87F242458ADA776BF /* Microfutures.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9C7389E7DD002E4EFE7C46604612106D /* Pods-NJ-Transit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E6859426A9701C77DD91ECF8BC79E7C /* Build configuration list for PBXNativeTarget "Pods-NJ-Transit" */;
+			buildPhases = (
+				0EEF26F44B639F0C51EB5CC825030722 /* Sources */,
+				64A331B62AAF16E95E1DF00B324795C6 /* Frameworks */,
+				4A30F1DD3382741A27DF357745E7904B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8596D0D877E6C6EE5CBD11828FE4A43 /* PBXTargetDependency */,
+			);
 			name = "Pods-NJ-Transit";
 			productName = "Pods-NJ-Transit";
-			productReference = 7F85BB6142C1D7AFA2F57A8EAA1F8072 /* Pods_NJ_Transit.framework */;
+			productReference = 7542A933921F31A61AF57A02E1454B6D /* Pods_NJ_Transit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E23568270406D97A8A61B221FC55B1A8 /* Pods-NJ-TransitTests */ = {
@@ -262,7 +352,7 @@
 			);
 			name = "Pods-NJ-TransitTests";
 			productName = "Pods-NJ-TransitTests";
-			productReference = F54244E3FE2188FCB6B211B8132CF086 /* Pods_NJ_TransitTests.framework */;
+			productReference = D84635F40C9D661AE42AD4C653D90C72 /* Pods_NJ_TransitTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -282,11 +372,12 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F3D6779BD2CC7BFDE99C00C6549C1AAE /* Products */;
+			productRefGroup = A255E4AD73D4C2F986064140F50F0481 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BB397DD40C633243DE856D1998CC13EF /* Pods-NJ-Transit */,
+				899382291472AFBE15F4BCC117F9CBD5 /* Microfutures */,
+				9C7389E7DD002E4EFE7C46604612106D /* Pods-NJ-Transit */,
 				E23568270406D97A8A61B221FC55B1A8 /* Pods-NJ-TransitTests */,
 				0DFCFD8C65CD24C62D7210140FDEC37D /* Pods-NJ-TransitUITests */,
 			);
@@ -294,19 +385,28 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0EEF26F44B639F0C51EB5CC825030722 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65F977B9A3E68CFCCC27894B5D86AB7 /* Pods-NJ-Transit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		478396A8330FB7EBA606C1FBFB5C25F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39F9551AD9E6B08C544DAA176CE17FB6 /* Microfutures-dummy.m in Sources */,
+				084D6DC0C7F243C1035E77DA017EBF34 /* Microfutures.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5B7337224E241C15956D80DC6B73BCC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B1CDDD853E4648F470F73DFFAC44A839 /* Pods-NJ-TransitTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		91B3D960CEAE63D49DA8C285FC917A27 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7B78796AD69FE42D29B41BC02A4807A /* Pods-NJ-Transit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +419,15 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8596D0D877E6C6EE5CBD11828FE4A43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Microfutures;
+			target = 899382291472AFBE15F4BCC117F9CBD5 /* Microfutures */;
+			targetProxy = 92697C5506A91F49EE9313EA9D6B1588 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		077AE5FDEC2CFF3DE423013D8BDF7EC0 /* Debug */ = {
@@ -354,9 +463,41 @@
 			};
 			name = Debug;
 		};
-		2EAB694E5903AB6AA4464BAA3B2D51A0 /* Release */ = {
+		0F6B8F7B6AA6C672B1EEF7042E0452A3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25CAB47945F899423C6177DBF9CF20BA /* Pods-NJ-Transit.release.xcconfig */;
+			baseConfigurationReference = 05775501799F7C9DFA7136C550A15443 /* Microfutures.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Microfutures/Microfutures-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Microfutures/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Microfutures/Microfutures.modulemap";
+				PRODUCT_NAME = Microfutures;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1DEE6210254FEF063B4DE7C6DF6444F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C144E10CE7822575BBAC535AD5C5B506 /* Pods-NJ-Transit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -381,12 +522,13 @@
 				PRODUCT_NAME = Pods_NJ_Transit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		3E3604F08D6B185ADA383EEC9AA1E713 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -421,6 +563,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		597D6E74DD6C883D657875BC0A837A1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05775501799F7C9DFA7136C550A15443 /* Microfutures.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Microfutures/Microfutures-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Microfutures/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Microfutures/Microfutures.modulemap";
+				PRODUCT_NAME = Microfutures;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		8899DCB7A4622EECF88EB538792B8F49 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -514,9 +687,9 @@
 			};
 			name = Release;
 		};
-		A7000F350861B4272C45FF80B017726F /* Debug */ = {
+		A451084C3CE56A137A21CFC9A73E17DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C144E10CE7822575BBAC535AD5C5B506 /* Pods-NJ-Transit.debug.xcconfig */;
+			baseConfigurationReference = 25CAB47945F899423C6177DBF9CF20BA /* Pods-NJ-Transit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -541,11 +714,13 @@
 				PRODUCT_NAME = Pods_NJ_Transit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		B53EDD60891CA0A99618C4BA3DEEBB79 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -646,15 +821,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		03143D8ACBFBAE380FBFFDA0C236C509 /* Build configuration list for PBXNativeTarget "Pods-NJ-Transit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A7000F350861B4272C45FF80B017726F /* Debug */,
-				2EAB694E5903AB6AA4464BAA3B2D51A0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -669,6 +835,24 @@
 			buildConfigurations = (
 				F116FA00192EA3395A7F12FDB602FCDD /* Debug */,
 				8899DCB7A4622EECF88EB538792B8F49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E6859426A9701C77DD91ECF8BC79E7C /* Build configuration list for PBXNativeTarget "Pods-NJ-Transit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEE6210254FEF063B4DE7C6DF6444F2 /* Debug */,
+				A451084C3CE56A137A21CFC9A73E17DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A29175725934F0EEE35945E76251090D /* Build configuration list for PBXNativeTarget "Microfutures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				597D6E74DD6C883D657875BC0A837A1F /* Debug */,
+				0F6B8F7B6AA6C672B1EEF7042E0452A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
