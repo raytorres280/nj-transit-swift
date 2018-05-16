@@ -12,7 +12,7 @@ import Microfutures
 let baseURL = "http://localhost:3000/"
 
 class APIService {
-    static var stations = [Station]()
+    //static var stations = [Station]()
     static var trains = [Train]()
     
     static func fetchAllStations() -> Future<[Station]> {
@@ -20,21 +20,49 @@ class APIService {
         return Future { completion in
             URLSession.shared.dataTask(with: route) { (data, response, err) in
                 guard let data = data else { return }
-                do {
-                    let coder = JSONDecoder()
-                    coder.dateDecodingStrategy = .formatted(DateFormatter.iso8601Full)
-                    let stations = try coder.decode([Station].self, from: data)
-                    APIService.stations = stations
-                    print(APIService.stations.count)
-                    completion(.success(stations))
+                let result = formatStations(data: data)
+                if(result.err != nil) {
+                    completion(.failure(result.err!))
                     return
-                    //                let station = Station(json: json)
-                } catch let jsonErr {
-                    print(jsonErr)
-                    completion(.failure(jsonErr))
+                } else {
+                    completion(.success(result.stations!))
                     return
                 }
+                //if other ui elemenets depend on this, change to observer/subscriber pattern.
+                //APIService.stations = stations
             }.resume()
+        }
+    }
+    
+    static func findRoute(from startId: Int, to endId: Int) -> Future<[Stop]> {
+        let route = URL(string: baseURL + "route/\(startId)/\(endId)")!
+        return Future { completion in
+            URLSession.shared.dataTask(with: route) { (data, response, err) in
+                guard let data = data else { return }
+                let result = formatStations(data: data)
+                if(result.err != nil) {
+                    completion(.failure(result.err!))
+                    return
+                } else {
+                    completion(.success(result.stations!))
+                    return
+                }
+                //if other ui elemenets depend on this, change to observer/subscriber pattern.
+                //APIService.stations = stations
+                }.resume()
+        }
+        
+    }
+    
+    private static func formatStations(data: Data) -> (stations: [Station]?, err: Error?) {
+        do {
+            let coder = JSONDecoder()
+            coder.dateDecodingStrategy = .formatted(DateFormatter.iso8601Full)
+            let stations = try coder.decode([Station].self, from: data)
+            return (stations, nil)
+        } catch let jsonErr {
+            print("\n" + jsonErr.localizedDescription)
+            return ([], jsonErr)
         }
     }
 }

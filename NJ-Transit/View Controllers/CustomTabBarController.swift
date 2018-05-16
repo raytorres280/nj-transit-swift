@@ -16,6 +16,7 @@ class CustomTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        homeNavigationController.isNavigationBarHidden = true
         viewControllers = [homeNavigationController, ticketsNavigationController, dvNavigationController]
         setupTabBar()
     }

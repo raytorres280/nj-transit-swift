@@ -26,29 +26,48 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     var startStation: Station?
     var endStation: Station?
-    var stations = [Station]()
+    var stations = [Station]() {
+        didSet {
+            DispatchQueue.main.sync {
+                //if I use threads correctly, dont think i need futures/promises anymore.
+                self.startPicker.reloadAllComponents()
+                self.endPicker.reloadAllComponents()
+            }
+        }
+    }
     
     var container: UIView = UIView()
-    var startionStationTextField: UITextField = UITextField()
-    var endStationTextField: UITextField = UITextField()
+    var startionStationTextField: UITextField = StationTextField()
+    var endStationTextField: UITextField = StationTextField()
     var list: UITableView = UITableView()
-    var picker: UIPickerView = UIPickerView()
-    var searchBtn: UIButton = UIButton.init(type: UIButtonType.system)
+    var startPicker: UIPickerView = UIPickerView()
+    var endPicker: UIPickerView = UIPickerView()
+    var searchBtn: UIButton = SearchBtn()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        APIService.fetchAllStations()
-        .subscribe(
-            onNext: { stations in
-                print(stations.count)
-                self.stations = stations
-        }, onError: { err in
-            print("found err")
-        })
-        setupStationPickerView()
+        setupStackView()
         setupTableView()
+        getStations()
     }
     
+    private func setupStackView() -> Void {
+        startPicker.dataSource = self
+        startPicker.delegate = self
+        endPicker.dataSource = self
+        endPicker.delegate = self
+        startionStationTextField.inputView = startPicker
+        endStationTextField.inputView = endPicker
+        let stackView = UIStackView(arrangedSubviews: [startionStationTextField, endStationTextField, searchBtn])
+        view.addSubview(stackView)
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.spacing = 10
+        stackView.distribution = .fillEqually
+        stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+        stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -56,7 +75,6 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let station = Station.init(id: 1, name: "hello", createdAt: Date(), updatedAt: Date())
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
-        //        var cell = StationCell(text: station.name)
         cell.textLabel?.text = station.name
         return cell
     }
@@ -72,55 +90,35 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return self.stations[row].name
     }
-    private func setupStationPickerView() -> Void {
-        picker.dataSource = self
-        picker.delegate = self
-        container.translatesAutoresizingMaskIntoConstraints = false
-        container.backgroundColor = UIColor.red
-        view.addSubview(container)
-        container.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        container.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.4).isActive = true
-        container.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        setupTextFields()
-        setupSearchBtn()
-        
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if pickerView == startPicker {
+            startionStationTextField.text = self.stations[row].name
+            startStation = self.stations[row]
+        }
+        if pickerView == endPicker {
+            endStationTextField.text = self.stations[row].name
+            endStation = self.stations[row]
+        }
     }
     
-    private func setupTextFields() -> Void {
-        container.addSubview(startionStationTextField)
-        container.addSubview(endStationTextField)
-        startionStationTextField.translatesAutoresizingMaskIntoConstraints = false
-        startionStationTextField.inputView = picker
-        startionStationTextField.backgroundColor = UIColor.orange
-        startionStationTextField.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
-        startionStationTextField.widthAnchor.constraint(equalTo: container.widthAnchor, multiplier: 0.75).isActive = true
-        startionStationTextField.centerYAnchor.constraint(equalTo: container.centerYAnchor, constant: -40).isActive = true
-        startionStationTextField.heightAnchor.constraint(equalToConstant: 40).isActive = true
+    @objc func donePicker(_: Any) -> Void {
         
-        endStationTextField.translatesAutoresizingMaskIntoConstraints = false
-        endStationTextField.inputView = picker
-        endStationTextField.backgroundColor = UIColor.purple
-        endStationTextField.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
-        endStationTextField.widthAnchor.constraint(equalTo: container.widthAnchor, multiplier: 0.75).isActive = true
-        endStationTextField.centerYAnchor.constraint(equalTo: container.centerYAnchor, constant: 40).isActive = true
-        endStationTextField.heightAnchor.constraint(equalToConstant: 40).isActive = true
     }
-    
+    @objc func cancelPicker(_: Any) -> Void {
+//        picker.endEditing(true)
+    }
     private func setupSearchBtn() -> Void {
         container.addSubview(searchBtn)
-//        searchBtn.backgroundColor = UIColor.cyan
-//        searchBtn.showsTouchWhenHighlighted = true
-        searchBtn.setTitle("search", for: UIControlState.normal)
-        searchBtn.addTarget(self, action: #selector(onSearchBtnTap(_ :)), for: .touchUpInside)
-        searchBtn.translatesAutoresizingMaskIntoConstraints = false
-        searchBtn.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        searchBtn.widthAnchor.constraint(equalTo: container.widthAnchor, multiplier: 0.75).isActive = true
-        searchBtn.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
-        searchBtn.centerYAnchor.constraint(equalTo: container.centerYAnchor, constant: 120).isActive = true
+        
     }
     
     @objc func onSearchBtnTap(_ : UIButton) {
         print("button tapped")
+    }
+    
+    @objc func onStartStationTextFieldTap(_: UITextField) -> Void {
+        print("textfield tapped")
     }
     
     private func setupTableView() -> Void {
@@ -130,9 +128,19 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
         list.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(list)
         list.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        list.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.6).isActive = true
-        list.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-//        list.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        list.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        list.topAnchor.constraint(equalTo: view.subviews[0].bottomAnchor, constant: 10).isActive = true
+    }
+    
+    private func getStations() -> Void {
+        APIService.fetchAllStations()
+            .subscribe(
+                onNext: { stations in
+                    print(stations.count)
+                    self.stations = stations
+            }, onError: { err in
+                print("found err")
+            })
     }
     
     override func didReceiveMemoryWarning() {
