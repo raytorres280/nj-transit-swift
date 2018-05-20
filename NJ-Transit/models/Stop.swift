@@ -12,6 +12,9 @@ struct Stop: Decodable {
     let id: Int
     let time: String
     let routeStopNumber: Int
-    let stationId: Int
-    let traiId: Int
+    let createdAt: Date
+    let updatedAt: Date
+    let Station: Station
+    let TrainId: Int
+    let StationId: Int
 }

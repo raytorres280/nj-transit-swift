@@ -13,6 +13,7 @@
 		9E0041B320A91C2C004803D8 /* StationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0041B220A91C2C004803D8 /* StationTextField.swift */; };
 		9E0041B720A91DE3004803D8 /* SearchBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0041B620A91DE3004803D8 /* SearchBtn.swift */; };
 		9E01037720ABEB4B00677D39 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E01037620ABEB4B00677D39 /* Stop.swift */; };
+		9E1646D420AE820700DD2F5E /* TrainWithSelectedStops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1646D320AE820700DD2F5E /* TrainWithSelectedStops.swift */; };
 		9E606D9820A0065E00A20B5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E606D9720A0065E00A20B5A /* Main.storyboard */; };
 		9E606D9B20A1EAAA00A20B5A /* API-service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E606D9A20A1EAAA00A20B5A /* API-service.swift */; };
 		9E606D9D20A1F90200A20B5A /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E606D9C20A1F90200A20B5A /* Station.swift */; };
@@ -24,6 +25,7 @@
 		9E637057209B673B0059857D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E637055209B673B0059857D /* LaunchScreen.storyboard */; };
 		9E637062209B673B0059857D /* NJ_TransitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E637061209B673B0059857D /* NJ_TransitTests.swift */; };
 		9E63706D209B673B0059857D /* NJ_TransitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E63706C209B673B0059857D /* NJ_TransitUITests.swift */; };
+		9E8B0A4420B10AB50082A143 /* TrainDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B0A4320B10AB50082A143 /* TrainDetailController.swift */; };
 		9EFF64A720A464E5000589FD /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF64A620A464E5000589FD /* CustomTabBarController.swift */; };
 		9EFF64A920A46DFF000589FD /* TicketsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF64A820A46DFF000589FD /* TicketsController.swift */; };
 		9EFF64AB20A46E28000589FD /* DepartureVisionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF64AA20A46E28000589FD /* DepartureVisionController.swift */; };
@@ -59,6 +61,7 @@
 		9E0041B220A91C2C004803D8 /* StationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTextField.swift; sourceTree = "<group>"; };
 		9E0041B620A91DE3004803D8 /* SearchBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBtn.swift; sourceTree = "<group>"; };
 		9E01037620ABEB4B00677D39 /* Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
+		9E1646D320AE820700DD2F5E /* TrainWithSelectedStops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainWithSelectedStops.swift; sourceTree = "<group>"; };
 		9E606D9720A0065E00A20B5A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9E606D9A20A1EAAA00A20B5A /* API-service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API-service.swift"; sourceTree = "<group>"; };
 		9E606D9C20A1F90200A20B5A /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
@@ -76,6 +79,7 @@
 		9E637068209B673B0059857D /* NJ-TransitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NJ-TransitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E63706C209B673B0059857D /* NJ_TransitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NJ_TransitUITests.swift; sourceTree = "<group>"; };
 		9E63706E209B673B0059857D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E8B0A4320B10AB50082A143 /* TrainDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainDetailController.swift; sourceTree = "<group>"; };
 		9EFF64A620A464E5000589FD /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		9EFF64A820A46DFF000589FD /* TicketsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsController.swift; sourceTree = "<group>"; };
 		9EFF64AA20A46E28000589FD /* DepartureVisionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureVisionController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 				9E606D9C20A1F90200A20B5A /* Station.swift */,
 				9E606D9E20A1F91600A20B5A /* Train.swift */,
 				9E01037620ABEB4B00677D39 /* Stop.swift */,
+				9E1646D320AE820700DD2F5E /* TrainWithSelectedStops.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 				9E63704B209B67390059857D /* HomeController.swift */,
 				9EFF64A820A46DFF000589FD /* TicketsController.swift */,
 				9EFF64AA20A46E28000589FD /* DepartureVisionController.swift */,
+				9E8B0A4320B10AB50082A143 /* TrainDetailController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -520,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E1646D420AE820700DD2F5E /* TrainWithSelectedStops.swift in Sources */,
 				9E606D9B20A1EAAA00A20B5A /* API-service.swift in Sources */,
 				9EFF64A720A464E5000589FD /* CustomTabBarController.swift in Sources */,
 				9E606D9D20A1F90200A20B5A /* Station.swift in Sources */,
@@ -528,6 +535,7 @@
 				9EFF64A920A46DFF000589FD /* TicketsController.swift in Sources */,
 				9E606D9F20A1F91600A20B5A /* Train.swift in Sources */,
 				9EFF64AB20A46E28000589FD /* DepartureVisionController.swift in Sources */,
+				9E8B0A4420B10AB50082A143 /* TrainDetailController.swift in Sources */,
 				9E01037720ABEB4B00677D39 /* Stop.swift in Sources */,
 				9E0041B720A91DE3004803D8 /* SearchBtn.swift in Sources */,
 				9E63704A209B67390059857D /* AppDelegate.swift in Sources */,

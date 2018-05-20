@@ -35,7 +35,13 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
             }
         }
     }
-    
+    var trains = [TrainWithSelectedStops]() {
+        didSet {
+            DispatchQueue.main.sync {
+                self.list.reloadData()
+            }
+        }
+    }
     var container: UIView = UIView()
     var startionStationTextField: UITextField = StationTextField()
     var endStationTextField: UITextField = StationTextField()
@@ -46,9 +52,11 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .purple
         setupStackView()
         setupTableView()
         getStations()
+        searchBtn.addTarget(self, action: #selector(self.onSearchBtnTap(_:)), for: .touchUpInside)
     }
     
     private func setupStackView() -> Void {
@@ -69,14 +77,20 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
         stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return trains.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let station = Station.init(id: 1, name: "hello", createdAt: Date(), updatedAt: Date())
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
-        cell.textLabel?.text = station.name
+        cell.textLabel?.text = trains[indexPath.row].train.name
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let train = trains[indexPath.row]
+        let vc = TrainDetailController()
+        vc.train = train
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -108,13 +122,14 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
     @objc func cancelPicker(_: Any) -> Void {
 //        picker.endEditing(true)
     }
-    private func setupSearchBtn() -> Void {
-        container.addSubview(searchBtn)
-        
-    }
     
     @objc func onSearchBtnTap(_ : UIButton) {
-        print("button tapped")
+        if(startStation != nil && endStation != nil) {
+            endStationTextField.endEditing(true)
+            getTrains(from: startStation!, to: endStation!)
+        } else {
+            print("select start and end stations before searching")
+        }
     }
     
     @objc func onStartStationTextFieldTap(_: UITextField) -> Void {
@@ -138,6 +153,21 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
                 onNext: { stations in
                     print(stations.count)
                     self.stations = stations
+            }, onError: { err in
+                print("found err")
+            })
+    }
+    
+    private func getTrains(from start: Station, to end: Station) -> Void {
+        APIService.findRoute(from: start.id, to: end.id)
+            .subscribe(
+                onNext: { trains in
+                    let formattedTrains = trains.map({ train -> TrainWithSelectedStops in
+                        let selectedStart = train.Stops.first { $0.Station.id == start.id }
+                        let selectedEnd = train.Stops.first { $0.Station.id == end.id }
+                        return TrainWithSelectedStops(start: selectedStart!, end: selectedEnd!, train: train)
+                    })
+                    self.trains = formattedTrains
             }, onError: { err in
                 print("found err")
             })

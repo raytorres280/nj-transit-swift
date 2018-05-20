@@ -34,17 +34,17 @@ class APIService {
         }
     }
     
-    static func findRoute(from startId: Int, to endId: Int) -> Future<[Stop]> {
-        let route = URL(string: baseURL + "route/\(startId)/\(endId)")!
+    static func findRoute(from startId: Int, to endId: Int) -> Future<[Train]> {
+        let route = URL(string: baseURL + "trains/\(startId)/\(endId)")!
         return Future { completion in
             URLSession.shared.dataTask(with: route) { (data, response, err) in
                 guard let data = data else { return }
-                let result = formatStations(data: data)
+                let result = formatTrains(data: data)
                 if(result.err != nil) {
                     completion(.failure(result.err!))
                     return
                 } else {
-                    completion(.success(result.stations!))
+                    completion(.success(result.trains!))
                     return
                 }
                 //if other ui elemenets depend on this, change to observer/subscriber pattern.
@@ -60,6 +60,18 @@ class APIService {
             coder.dateDecodingStrategy = .formatted(DateFormatter.iso8601Full)
             let stations = try coder.decode([Station].self, from: data)
             return (stations, nil)
+        } catch let jsonErr {
+            print("\n" + jsonErr.localizedDescription)
+            return ([], jsonErr)
+        }
+    }
+    
+    private static func formatTrains(data: Data) -> (trains: [Train]?, err: Error?) {
+        do {
+            let coder = JSONDecoder()
+            coder.dateDecodingStrategy = .formatted(DateFormatter.iso8601Full)
+            let trains = try coder.decode([Train].self, from: data)
+            return (trains, nil)
         } catch let jsonErr {
             print("\n" + jsonErr.localizedDescription)
             return ([], jsonErr)

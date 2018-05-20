@@ -8,10 +8,11 @@
 
 import Foundation
 
-struct Train {
+struct Train: Decodable {
     let id: Int
     let name: String
     let chargeRate: Int
     let createdAt: Date
     let updatedAt: Date
+    let Stops: [Stop]
 }
