@@ -26,6 +26,7 @@
 		9E637062209B673B0059857D /* NJ_TransitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E637061209B673B0059857D /* NJ_TransitTests.swift */; };
 		9E63706D209B673B0059857D /* NJ_TransitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E63706C209B673B0059857D /* NJ_TransitUITests.swift */; };
 		9E8B0A4420B10AB50082A143 /* TrainDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B0A4320B10AB50082A143 /* TrainDetailController.swift */; };
+		9E8B0A4620B10D820082A143 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B0A4520B10D820082A143 /* ColorHelper.swift */; };
 		9EFF64A720A464E5000589FD /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF64A620A464E5000589FD /* CustomTabBarController.swift */; };
 		9EFF64A920A46DFF000589FD /* TicketsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF64A820A46DFF000589FD /* TicketsController.swift */; };
 		9EFF64AB20A46E28000589FD /* DepartureVisionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFF64AA20A46E28000589FD /* DepartureVisionController.swift */; };
@@ -80,6 +81,7 @@
 		9E63706C209B673B0059857D /* NJ_TransitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NJ_TransitUITests.swift; sourceTree = "<group>"; };
 		9E63706E209B673B0059857D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E8B0A4320B10AB50082A143 /* TrainDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainDetailController.swift; sourceTree = "<group>"; };
+		9E8B0A4520B10D820082A143 /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
 		9EFF64A620A464E5000589FD /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		9EFF64A820A46DFF000589FD /* TicketsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsController.swift; sourceTree = "<group>"; };
 		9EFF64AA20A46E28000589FD /* DepartureVisionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureVisionController.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				9E637055209B673B0059857D /* LaunchScreen.storyboard */,
 				9E637058209B673B0059857D /* Info.plist */,
 				9E637050209B67390059857D /* NJ_Transit.xcdatamodeld */,
+				9E8B0A4520B10D820082A143 /* ColorHelper.swift */,
 			);
 			path = "NJ-Transit";
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 				9EFF64AB20A46E28000589FD /* DepartureVisionController.swift in Sources */,
 				9E8B0A4420B10AB50082A143 /* TrainDetailController.swift in Sources */,
 				9E01037720ABEB4B00677D39 /* Stop.swift in Sources */,
+				9E8B0A4620B10D820082A143 /* ColorHelper.swift in Sources */,
 				9E0041B720A91DE3004803D8 /* SearchBtn.swift in Sources */,
 				9E63704A209B67390059857D /* AppDelegate.swift in Sources */,
 				9E0041B120A91AB5004803D8 /* StartEndStationContainer.swift in Sources */,

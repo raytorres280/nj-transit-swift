@@ -88,8 +88,7 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let train = trains[indexPath.row]
-        let vc = TrainDetailController()
-        vc.train = train
+        let vc = TrainDetailController(train: train)
         navigationController?.pushViewController(vc, animated: true)
     }
     

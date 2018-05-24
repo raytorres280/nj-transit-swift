@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NJ-Transit/View Controllers/HomeController.swift"
-            timestampString = "548473638.459039"
+            timestampString = "548893962.1082979"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
             landmarkName = "getTrains(from:to:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NJ-Transit/View Controllers/HomeController.swift"
-            timestampString = "548473638.459785"
+            timestampString = "548893962.108361"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
             landmarkName = "getTrains(from:to:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NJ-Transit/View Controllers/HomeController.swift"
-            timestampString = "548473638.4601589"
+            timestampString = "548893962.108405"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
             landmarkName = "getTrains(from:to:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,12 +58,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NJ-Transit/View Controllers/HomeController.swift"
-            timestampString = "548473638.460438"
+            timestampString = "548893962.108448"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "onSearchBtnTap(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NJ-Transit/View Controllers/TrainDetailController.swift"
+            timestampString = "548893962.1084909"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "init(train:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NJ_Transit.TrainDetailController.init(train: NJ_Transit.TrainWithSelectedStops) -&gt; NJ_Transit.TrainDetailController"
+                  moduleName = "NJ-Transit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/raymondtorres/Developer/njtransit-swift/NJ-Transit/NJ-Transit/View%20Controllers/TrainDetailController.swift"
+                  timestampString = "548893626.83183"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "201">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (NJ_Transit.Stop) -&gt; __ObjC.UILabel in NJ_Transit.TrainDetailController.init(train: NJ_Transit.TrainWithSelectedStops) -&gt; NJ_Transit.TrainDetailController"
+                  moduleName = "NJ-Transit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/raymondtorres/Developer/njtransit-swift/NJ-Transit/NJ-Transit/View%20Controllers/TrainDetailController.swift"
+                  timestampString = "548893626.834947"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "27">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NJ-Transit/View Controllers/TrainDetailController.swift"
+            timestampString = "548893962.108794"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "init(train:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
